@@ -2,7 +2,7 @@
 
 Полная инструкция: от нуля до первой истории на macOS, Windows и Linux. Обычно установка занимает 10 минут и ещё 5–30 минут уходит на загрузку модели.
 
-**Скачать:** [страница релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.2)
+**Скачать:** [страница релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.3)
 
 - [Из чего всё состоит](#из-чего-всё-состоит)
 - [Подойдёт ли ваш компьютер](#подойдёт-ли-ваш-компьютер)
@@ -20,7 +20,7 @@
 
 | Что | Зачем | Откуда |
 |---|---|---|
-| **ECHO WORLD** | Само приложение: истории, редактор, память, доска | [Релиз](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.2) |
+| **ECHO WORLD** | Само приложение: истории, редактор, память, доска | [Релиз](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.3) |
 | **Ollama** | Бесплатная программа, которая запускает нейросеть на вашем компьютере | [ollama.com](https://ollama.com/download) |
 | **Модель** | Сама нейросеть, файл на 3–8 ГБ | Скачивается кнопкой в ECHO WORLD |
 
@@ -47,7 +47,7 @@
 
 ## macOS
 
-Один файл подходит и для Apple Silicon, и для Intel: **`ECHO-WORLD_1.0.0-beta.2_macos-universal.dmg`**.
+Один файл подходит и для Apple Silicon, и для Intel: **`ECHO-WORLD_1.0.0-beta.3_macos-universal.dmg`**.
 
 ### 1. Ollama
 
@@ -79,7 +79,7 @@ ECHO WORLD умеет запустить Ollama сам и подскажет, е
 
 ## Windows
 
-Файл: **`ECHO-WORLD_1.0.0-beta.2_windows-x64-setup.exe`**.
+Файл: **`ECHO-WORLD_1.0.0-beta.3_windows-x64-setup.exe`**.
 
 ### 1. Ollama
 
@@ -107,8 +107,8 @@ ECHO WORLD умеет запустить Ollama сам и подскажет, е
 
 Два варианта, выберите один:
 
-- **`ECHO-WORLD_1.0.0-beta.2_linux-x86_64.AppImage`** — один файл, работает почти в любом дистрибутиве, установка не нужна.
-- **`echo-world_1.0.0-beta.2_amd64.deb`** — пакет для Ubuntu, Debian, Mint и других дистрибутивов на основе Debian, появится в меню приложений.
+- **`ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage`** — один файл, работает почти в любом дистрибутиве, установка не нужна.
+- **`echo-world_1.0.0-beta.3_amd64.deb`** — пакет для Ubuntu, Debian, Mint и других дистрибутивов на основе Debian, появится в меню приложений.
 
 ### 1. Ollama
 
@@ -127,11 +127,11 @@ systemctl status ollama
 ### 2а. AppImage
 
 ```bash
-chmod +x ECHO-WORLD_1.0.0-beta.2_linux-x86_64.AppImage
+chmod +x ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage
 ```
 
 ```bash
-./ECHO-WORLD_1.0.0-beta.2_linux-x86_64.AppImage
+./ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage
 ```
 
 Если AppImage не запускается с ошибкой про FUSE, поставьте библиотеку: на Ubuntu 22.04 — `sudo apt install libfuse2`, на Ubuntu 24.04 и новее — `sudo apt install libfuse2t64`.
@@ -139,7 +139,7 @@ chmod +x ECHO-WORLD_1.0.0-beta.2_linux-x86_64.AppImage
 ### 2б. Пакет .deb
 
 ```bash
-sudo apt install ./echo-world_1.0.0-beta.2_amd64.deb
+sudo apt install ./echo-world_1.0.0-beta.3_amd64.deb
 ```
 
 ECHO WORLD появится в меню приложений. Нужные библиотеки (WebKitGTK) apt поставит сам.
