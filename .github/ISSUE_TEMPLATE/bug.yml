@@ -1,0 +1,29 @@
+name: Ошибка
+description: Что-то сломалось, работает не так или непонятно
+title: "Ошибка: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что вы делали и что ожидали увидеть. Пара фраз — уже хорошо.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: Сведения о программе
+      description: В приложении «Руководство → Сообщить о проблеме → Скопировать сведения» и вставьте сюда. Текстов ваших историй там нет.
+      render: text
+  - type: textarea
+    id: details
+    attributes:
+      label: Подробности ошибки
+      description: Если было сообщение об ошибке — «Подробности» → «Скопировать» под ним.
+      render: text
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Снимок экрана
+      description: ⇧⌘4 и выделить область, затем перетащить файл сюда. Не прикладывайте то, что не хотите показывать.

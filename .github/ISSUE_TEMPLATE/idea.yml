@@ -1,0 +1,12 @@
+name: Идея или пожелание
+description: Чего не хватает, что было бы удобнее
+title: "Идея: "
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Что хотелось бы
+      description: Что вы пытались сделать и что помогло бы.
+    validations:
+      required: true
