@@ -6,7 +6,7 @@
 
 > **Бета-версия.** Это первая открытая версия для тестирования — **1.0.0-beta.1**. Что-то может работать не так, как ожидается, а данные могут потеряться — делайте копии важных историй («Ещё → Экспорт»). Отзывы очень нужны: [как сообщить о проблеме](#отзывы-и-ошибки).
 
-**[⬇ Скачать для Mac (Apple Silicon)](https://github.com/ognewmax-eng/echo-world-app/releases/latest)** · [Установка](docs/INSTALL.md) · [Руководство](docs/GUIDE.md) · [Что нового](CHANGELOG.md)
+**[⬇ Скачать для Mac (Apple Silicon)](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.1)** · [Установка](docs/INSTALL.md) · [Руководство](docs/GUIDE.md) · [Что нового](CHANGELOG.md)
 
 ![Подготовка модели при первом запуске](screenshots/01-setup.png)
 
@@ -62,7 +62,7 @@
 
 ## Как начать
 
-1. Скачайте `ECHO-WORLD_1.0.0-beta.1_aarch64.dmg` со [страницы релиза](https://github.com/ognewmax-eng/echo-world-app/releases/latest).
+1. Скачайте `ECHO-WORLD_1.0.0-beta.1_aarch64.dmg` со [страницы релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.1).
 2. Откройте его и перетащите ECHO WORLD в «Программы».
 3. При первом запуске macOS попросит разрешения: бета не заверена в Apple. Откройте «Системные настройки → Конфиденциальность и безопасность» и нажмите «Всё равно открыть». Подробно, со всеми шагами, — в [docs/INSTALL.md](docs/INSTALL.md).
 4. На главном экране — карточка «Подготовим модель»: «Запустить Ollama» → «Скачать …». Загрузка модели займёт от 5 до 30 минут.

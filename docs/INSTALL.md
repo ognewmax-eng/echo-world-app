@@ -1,6 +1,6 @@
 # Установка ECHO WORLD на Mac
 
-> Бета-версия 1.0.0-beta.1. Скачать — на [странице релиза](https://github.com/ognewmax-eng/echo-world-app/releases/latest).
+> Бета-версия 1.0.0-beta.1. Скачать — на [странице релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.1).
 
 ECHO WORLD — приложение, в котором вы пишете истории вместе с нейросетью. Нейросеть работает прямо на вашем Mac: тексты никуда не отправляются, интернет нужен только для установки.
 
@@ -15,7 +15,7 @@ ECHO WORLD — приложение, в котором вы пишете ист�
 
 ### 1. Приложение
 
-1. Скачайте `ECHO-WORLD_1.0.0-beta.1_aarch64.dmg` со [страницы релиза](https://github.com/ognewmax-eng/echo-world-app/releases/latest) и откройте его.
+1. Скачайте `ECHO-WORLD_1.0.0-beta.1_aarch64.dmg` со [страницы релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.1) и откройте его.
 2. Перетащите значок **ECHO WORLD** в папку **Applications** (Программы) в том же окне.
 3. Закройте окно и извлеките диск ECHO WORLD (в Finder слева — значок ⏏).
 
