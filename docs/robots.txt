@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://ognewmax-eng.github.io/echo-world-app/sitemap.xml
