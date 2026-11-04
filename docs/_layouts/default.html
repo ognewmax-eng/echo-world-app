@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }} | ECHO WORLD</title>
-<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | escape }}">
+<title>{% if page.title contains 'ECHO WORLD' %}{{ page.title }}{% else %}{{ page.title }} | ECHO WORLD{% endif %}</title>
+<meta name="description" content="{{ content | strip_html | strip_newlines | truncate: 155 | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="icon" type="image/png" href="{{ '/assets/icon.png' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
