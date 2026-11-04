@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | ECHO WORLD</title>
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 155 | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/icon.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="28" height="28">ECHO WORLD</a>
+  <nav aria-label="Разделы">
+    <a href="{{ '/#download' | relative_url }}">Скачать</a>
+    <a href="{{ '/INSTALL.html' | relative_url }}">Установка</a>
+    <a href="{{ '/GUIDE.html' | relative_url }}">Руководство</a>
+    <a href="https://github.com/ognewmax-eng/echo-world-app">GitHub</a>
+  </nav>
+</header>
+<main class="doc">
+{{ content }}
+</main>
+<footer class="foot"><p>ECHO WORLD — бесплатное приложение в стадии открытого тестирования. © 2026 ECHO WORLD.</p></footer>
+</body>
+</html>

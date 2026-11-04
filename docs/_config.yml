@@ -1,0 +1,10 @@
+title: ECHO WORLD
+description: Пишите книги и рассказы вместе с нейросетью на своём компьютере.
+url: https://ognewmax-eng.github.io
+baseurl: /echo-world-app
+lang: ru
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
