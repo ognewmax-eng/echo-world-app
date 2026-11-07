@@ -2,7 +2,7 @@
 
 Полная инструкция: от нуля до первой истории на macOS, Windows и Linux. Обычно установка занимает 10 минут и ещё 5–30 минут уходит на загрузку модели.
 
-**Скачать:** [страница релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.3)
+**Скачать:** [страница релиза](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.7)
 
 - [Из чего всё состоит](#из-чего-всё-состоит)
 - [Подойдёт ли ваш компьютер](#подойдёт-ли-ваш-компьютер)
@@ -12,6 +12,7 @@
 - [Модель: какую выбрать и как поставить вручную](#модель)
 - [Первая история — проверка, что всё работает](#первая-история)
 - [Если что-то не получилось](#если-что-то-не-получилось)
+- [Озвучка (необязательно)](#озвучка-необязательно)
 - [Где хранятся истории](#где-хранятся-истории)
 - [Обновление и удаление](#обновление-и-удаление)
 - [Проверить, что файл не повреждён](#проверить-что-файл-не-повреждён)
@@ -20,7 +21,7 @@
 
 | Что | Зачем | Откуда |
 |---|---|---|
-| **ECHO WORLD** | Само приложение: истории, редактор, память, доска | [Релиз](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.3) |
+| **ECHO WORLD** | Само приложение: истории, редактор, память, доска | [Релиз](https://github.com/ognewmax-eng/echo-world-app/releases/tag/v1.0.0-beta.7) |
 | **Ollama** | Бесплатная программа, которая запускает нейросеть на вашем компьютере | [ollama.com](https://ollama.com/download) |
 | **Модель** | Сама нейросеть, файл на 3–8 ГБ | Скачивается кнопкой в ECHO WORLD |
 
@@ -47,7 +48,7 @@
 
 ## macOS
 
-Один файл подходит и для Apple Silicon, и для Intel: **`ECHO-WORLD_1.0.0-beta.3_macos-universal.dmg`**.
+Один файл подходит и для Apple Silicon, и для Intel: **`ECHO-WORLD_1.0.0-beta.7_macos-universal.dmg`**.
 
 ### 1. Ollama
 
@@ -79,7 +80,7 @@ ECHO WORLD умеет запустить Ollama сам и подскажет, е
 
 ## Windows
 
-Файл: **`ECHO-WORLD_1.0.0-beta.3_windows-x64-setup.exe`**.
+Файл: **`ECHO-WORLD_1.0.0-beta.7_windows-x64-setup.exe`**.
 
 ### 1. Ollama
 
@@ -107,8 +108,8 @@ ECHO WORLD умеет запустить Ollama сам и подскажет, е
 
 Два варианта, выберите один:
 
-- **`ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage`** — один файл, работает почти в любом дистрибутиве, установка не нужна.
-- **`echo-world_1.0.0-beta.3_amd64.deb`** — пакет для Ubuntu, Debian, Mint и других дистрибутивов на основе Debian, появится в меню приложений.
+- **`ECHO-WORLD_1.0.0-beta.7_linux-x86_64.AppImage`** — один файл, работает почти в любом дистрибутиве, установка не нужна.
+- **`echo-world_1.0.0-beta.7_amd64.deb`** — пакет для Ubuntu, Debian, Mint и других дистрибутивов на основе Debian, появится в меню приложений.
 
 ### 1. Ollama
 
@@ -127,11 +128,11 @@ systemctl status ollama
 ### 2а. AppImage
 
 ```bash
-chmod +x ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage
+chmod +x ECHO-WORLD_1.0.0-beta.7_linux-x86_64.AppImage
 ```
 
 ```bash
-./ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage
+./ECHO-WORLD_1.0.0-beta.7_linux-x86_64.AppImage
 ```
 
 Если AppImage не запускается с ошибкой про FUSE, поставьте библиотеку: на Ubuntu 22.04 — `sudo apt install libfuse2`, на Ubuntu 24.04 и новее — `sudo apt install libfuse2t64`.
@@ -139,7 +140,7 @@ chmod +x ECHO-WORLD_1.0.0-beta.3_linux-x86_64.AppImage
 ### 2б. Пакет .deb
 
 ```bash
-sudo apt install ./echo-world_1.0.0-beta.3_amd64.deb
+sudo apt install ./echo-world_1.0.0-beta.7_amd64.deb
 ```
 
 ECHO WORLD появится в меню приложений. Нужные библиотеки (WebKitGTK) apt поставит сам.
@@ -221,6 +222,54 @@ ollama pull gemma4:12b
 | Linux: пустое окно | `WEBKIT_DISABLE_DMABUF_RENDERER=1` перед запуском (см. [Linux](#linux)) |
 
 Ничего не помогло? [Создайте issue](https://github.com/ognewmax-eng/echo-world-app/issues/new?template=bug.yml) или напишите тому, кто дал вам ссылку. В приложении «Руководство → Сообщить о проблеме → Скопировать сведения» соберёт версию, систему, модель и память — без текстов ваших историй. Под любым сообщением об ошибке есть «Подробности» → «Скопировать».
+
+## Озвучка (необязательно)
+
+Главы может читать вслух [Voicebox](https://github.com/jamiepine/voicebox) — бесплатная программа для синтеза речи. ECHO WORLD её не устанавливает: это отдельная программа со своими моделями.
+
+**Что нужно.** Видеокарта NVIDIA примерно с 6 ГБ свободной видеопамяти для модели Qwen TTS 1.7B — она лучше всего справилась с русским и сама ставит ударения. На Mac с 8 ГБ памяти озвучка нормально работать не будет.
+
+1. Скачайте Voicebox со [страницы его релизов](https://github.com/jamiepine/voicebox/releases) и установите.
+2. В Voicebox скачайте модель **Qwen TTS 1.7B** и создайте голос: запишите свой образец (20–30 секунд, в WAV, без музыки, текст образца — слово в слово) или выберите встроенный.
+3. В ECHO WORLD: «Настройки → Модель → Озвучка», адрес `127.0.0.1:17493` (если Voicebox на этом же компьютере) → «Проверить и показать голоса» → голос → «Сохранить».
+
+### Voicebox на другом компьютере
+
+Если ECHO WORLD стоит на одном компьютере, а Voicebox — на другом (например, на ПК с видеокартой):
+
+- сервер Voicebox нужно запускать с параметром `--host 0.0.0.0`, иначе он принимает только запросы с самого ПК;
+- в брандмауэре Windows откройте порт 17493 — лучше только для Tailscale (PowerShell от администратора):
+
+```powershell
+New-NetFirewallRule -DisplayName "Voicebox 17493" -Direction Inbound -Protocol TCP -LocalPort 17493 -Action Allow -RemoteAddress 100.64.0.0/10
+```
+
+- в ECHO WORLD укажите адрес ПК в Tailscale или домашней сети: `100.x.y.z:17493`. Порт на роутере не открывайте: у Voicebox нет пароля.
+
+### Windows: сервер Voicebox сразу закрывается
+
+На некоторых ПК сервер Voicebox падает с ошибкой `LLVM ERROR: Symbol not found: __svml_cosf8_ha`. Это известная ошибка самого Voicebox ([issue #742](https://github.com/jamiepine/voicebox/issues/742)): находится старая библиотека Intel `svml_dispmd.dll`, оставленная другой программой. Обход — положить свежую библиотеку от Intel первой в `PATH` и запустить сервер вручную. В PowerShell:
+
+```powershell
+$url = "https://files.pythonhosted.org/packages/60/d3/3be0c4a92a90e839dbff94052228fc11fad3ed08b562f236ec8585b297ec/intel_cmplr_lib_rt-2026.2.0-py2.py3-none-win_amd64.whl"
+$dir = "$env:USERPROFILE\intel-rt"
+New-Item -ItemType Directory -Force $dir | Out-Null
+Invoke-WebRequest $url -OutFile "$dir\rt.zip"
+if ((Get-FileHash "$dir\rt.zip" -Algorithm SHA256).Hash -ne "BFEEC6A2A1F032A36490CC46CB1D566813FD75FD9E068B80F231043ABFB4DC98") { throw "Контрольная сумма не совпала" }
+Expand-Archive "$dir\rt.zip" "$dir\x" -Force
+```
+
+Это делается один раз. Дальше сервер запускается так (каждый раз, в новом окне PowerShell; приложение Voicebox после этого подключится к уже запущенному серверу):
+
+```powershell
+Get-Process voicebox* -ErrorAction SilentlyContinue | Stop-Process -Force
+$data = "$env:APPDATA\sh.voicebox.app"
+$env:PATH = "$env:USERPROFILE\intel-rt\x\intel_cmplr_lib_rt-2026.2.0.data\data\Library\bin;$env:PATH"
+Set-Location "$data\backends\cuda"
+Start-Process .\voicebox-server-cuda.exe -ArgumentList "--data-dir ""$data"" --port 17493 --host 0.0.0.0"
+```
+
+Если Voicebox нужен только на этом же ПК, `--host 0.0.0.0` можно убрать.
 
 ## Где хранятся истории
 
